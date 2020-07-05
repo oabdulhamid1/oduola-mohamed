@@ -1,0 +1,54 @@
+<head>
+	<title id="title">freeCodeCamp Survey Form</title>
+	<link rel="stylesheet" type="text/css" href="survey.css">
+</head>
+<body>
+	<h1>Feedback Survey</h1>
+	<p id="description"> Thank you for taking the time to help us improve the platform </p>
+</body>
+
+
+  <form id="survey-form">
+    <table>
+      <tr>
+        <td><label for="name" class="leftcol" id="name-label">What is your name?</label></td>
+        <td><input type="text" class="rightcol" name="name" id="name" placeholder="Steve Stevenson" required></td>
+      </tr>
+      <tr>
+        <td><label for="email" class="leftcol" id="email-label">What is your email address?</label></td>
+        <td><input type="email" name="email" id="email" class="rightcol" placeholder="stevestevenson@stevestevenson.com" required></td>
+      </tr>
+      <tr>
+        <td><label for="number" id="number-label">How many days through the #100DaysOfCode challange are you?</label></td>
+        <td><input type="number" name="number" id="number"  min="18" max="99" placeholder="18"></td>
+      </tr>
+      <tr>
+        <td><label for="dropdown" id="dropdown-label">What is your rating for this challenge, out of ten?</label></td>
+        <td>
+          <select name="dropdown" id="dropdown" name="dropdown">
+            <option value="1" selected="">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Are you:</td>
+        <td>
+          <input type="radio" name="gender" value="male" id="male">
+          <label for="male" name="gender">Male</label><br>
+          <input type="radio" name="gender" value="female" id="female">
+          <label for="female" name="gender">Female</label><br>
+          <input type="radio" name="gender" value="other" id="other">
+          <label for="other" name="gender">Other</label><br>
+          <input type="radio" name="gender" value="prefernottosay" id="prefernottosay">
+          <label for="prefernottosay" name="gender">Prefer Not To Say</label>
+        </td>
+      </tr>
